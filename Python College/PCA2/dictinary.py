@@ -17,11 +17,13 @@ mk={1:87,2:54,3:21,4:32}
 
 sum=0
 
-k=[]
+
 for i in mk:
     sum=sum+i+mk[i]
-    k.append(sum)
+    k={1:sum}
     
 print(k)
     
+    
+print(type(mk))
     

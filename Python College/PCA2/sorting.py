@@ -10,8 +10,7 @@ for i in range(0,l-1):
             
 '''
 
-'''
-                            SELECTION SORT
+#                           SELECTION SORT
 for i in range(0,l-1):
     min=i
     for j in range(i+1,l-1):
@@ -19,7 +18,17 @@ for i in range(0,l-1):
             min=j
         
         arr[i],arr[min]=arr[min],arr[i]
+    print(arr)
         
 '''
+for i in range(0,l-1):
+    for j in range(i+1,l-1):
+        if(arr[i]>arr[j]):
+            arr[i],arr[j]=arr[j],arr[i]
+    print(arr)
+    
+'''
+
+arr.sort()
             
 print(arr)
