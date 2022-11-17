@@ -51,22 +51,6 @@ void Post_Order(node *root){                         // MAIN CODE OF POST ORDER
 }
 
 
-void Level_Order(node *root){
-    node *ptr=root;
-
-    int arr[20];
-    arr[0]=root->data;
-
-    int l=sizeof(arr)/sizeof(arr[0]);
-
-    if(l!=0){
-        for(int i=1; i<10; i++){
-            arr
-        }
-    }
-
-
-}
 
 int main(){
 
