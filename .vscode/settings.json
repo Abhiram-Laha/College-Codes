@@ -3,6 +3,9 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "sstream": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "*.tcc": "c",
+        "istream": "c",
+        "streambuf": "c"
     }
 }
