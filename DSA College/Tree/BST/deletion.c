@@ -162,7 +162,7 @@ int main(){
 
     display(root);
 
-    delete(root,12);
+    delete(root,9);
 
     printf("\n");
 
