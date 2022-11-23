@@ -97,10 +97,54 @@ void delete(node *root,int item){
 
 
     // ! ONE CHILD
+
+    else if(ptr->Llink==NULL){
+
+        if(par->Rlink->data==item){
+            par->Rlink=ptr->Rlink;
+        }
+        else{
+            par->Llink=ptr->Rlink;
+        }
+    }
+
+    else if(ptr->Rlink==NULL){
+
+        if(par->Rlink->data==item){
+            par->Rlink=ptr->Llink;
+        }
+        else{
+            par->Llink=ptr->Llink;
+        }
+    }
+
+
+
+    // ! TWO CHILD
+
+
     
 
     
     
+}
+
+
+void delete_two_child(node *root,node *ptr,node *par,int item){
+    node *succ,*parsucc;
+
+    if(item<root->data){
+        succ=ptr->Rlink;
+
+        while(succ!=NULL){
+            parsucc=succ;
+            succ=succ->Llink;
+        }
+
+        ptr->data=parsucc->data;
+
+
+    }
 }
 
 
@@ -114,10 +158,12 @@ int main(){
     insertion(&root,37);
     insertion(&root,62);
     insertion(&root,71);
+    insertion(&root,9);
+    insertion(&root,59);
 
     display(root);
 
-    delete(root,37);
+    delete(root,12);
 
     printf("\n");
 
