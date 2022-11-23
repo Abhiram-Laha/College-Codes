@@ -143,7 +143,6 @@ void delete_two_child(node *root,node *ptr,node *par,int item){
 
         ptr->data=parsucc->data;
 
-
     }
 }
 
