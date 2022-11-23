@@ -61,7 +61,47 @@ void display(node *root){
 }
 
 
-//void delete_no_child()
+
+void delete(node *root,int item){
+    node *ptr,*par;
+    ptr=root;
+
+    //SEARCH PART
+
+    while(ptr!=NULL){
+        if(item==ptr->data){
+            break;
+        }
+        else if(item>ptr->data){
+            par=ptr;
+            ptr=ptr->Rlink;
+        }
+        else if(item<ptr->data){
+            par=ptr;
+            ptr=ptr->Llink;
+        }
+    }
+
+    //CHECKING PART
+
+    // ! NO CHILD
+
+    if(ptr->Rlink==NULL && ptr->Llink==NULL){
+        if(par->Rlink->data==item){
+            par->Rlink=NULL;
+        }
+        else{
+            par->Llink=NULL;
+        }
+    }
+
+
+    // ! ONE CHILD
+    
+
+    
+    
+}
 
 
 
@@ -76,5 +116,13 @@ int main(){
     insertion(&root,71);
 
     display(root);
+
+    delete(root,37);
+
+    printf("\n");
+
+    display(root);
+
+    
     return 0;
 }
