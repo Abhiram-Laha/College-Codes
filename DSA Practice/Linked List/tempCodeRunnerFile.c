@@ -90,16 +90,14 @@ int main(){
     insertion(&a,2);
     insertion(&a,3);
     insertion(&a,4);
-    insertion(&a,5);
-    
+    insertion(&a,51);
 
 
 
     insertion(&b,1);
-    insertion(&b,2);
+    insertion(&b,7);
     insertion(&b,3);
     insertion(&b,4);
-    
     
     
     display(a);
