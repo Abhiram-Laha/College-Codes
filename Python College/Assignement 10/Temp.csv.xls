@@ -1,0 +1,8 @@
+day,weather,Temperature,wind,humidity
+sun,sunny,12.79,18,40
+mon,sunny,23.78,34,94
+tue,sunny,24.77,23,67
+wed,cloudy,34.67,28,89
+thu,shower,19.8,29,56
+fri,shower,21,27,75
+sat,sunny,25.45,40,29
