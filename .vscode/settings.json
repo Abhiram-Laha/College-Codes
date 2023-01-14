@@ -6,6 +6,7 @@
         "stdlib.h": "c",
         "*.tcc": "c",
         "istream": "c",
-        "streambuf": "c"
+        "streambuf": "c",
+        "stdio.h": "c"
     }
 }
