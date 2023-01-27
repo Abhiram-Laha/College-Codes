@@ -41,6 +41,7 @@ int Dequeue(){
     }
     else{
         int v=q1.Q[q1.front+1];
+        
         if(q1.front==q1.rear){      //sinle element
             q1.front==-1;
             q1.rear==-1;
@@ -72,7 +73,7 @@ int main(){
     Enqueue(6);
     Enqueue(17);
 
-    printf("\n%d ",Dequeue());
+    
     Display();
 
 
