@@ -1,5 +1,3 @@
-# 1
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -31,11 +29,6 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 print(confusion_matrix(y_test,y_pred))
 print(classification_report(y_test,y_pred))
-
-
-
-# 2
-
 
 import numpy as np
 import matplotlib.pyplot as plt
