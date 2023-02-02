@@ -7,6 +7,7 @@
         "*.tcc": "c",
         "istream": "c",
         "streambuf": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "SELECTIONSORT[1].C": "cpp"
     }
 }
